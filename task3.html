@@ -9,7 +9,113 @@
         }
         div h2 {
             background-color: #96ec96;
-            transform: rotate(-4deg);
+            transform: rotate(-1deg);
+        }
+        p#test {
+            color: aqua;
+        }
+        h2#test {
+            font-size: 30px;
+        }
+        .bbb {
+            background-color: blue;
+        }
+        .bbb#test {
+            background-color: blueviolet;
+        }
+        p.bbb {
+            transform: rotate(+1deg);
+        }
+        h2.bbb {
+            margin-left: 50px;
+            background-color: antiquewhite;
+        }
+        p.bbb#test {
+            color: #ffffff;
+        }
+        div h2, p {
+            /*font-size: 30px;*/
+            background-color: #818181;
+        }
+        .bbb, .xxx {
+            font-size: 30px;
+        }
+        p.bbb, h2.xxx {
+            color: chartreuse;
+        }
+        p.bbb#test, p.xxx#test {
+            color: coral;
+        }
+        .fff {
+            background-color: coral;
+        }
+        p.fff {
+            color: white;
+        }
+        .bbb.fff{
+            font-size: 30px;
+        }
+        h2.bbb.fff{
+            margin-left: unset;
+        }
+        a#test:link, a#test:visited{
+            text-decoration:none;
+            color:red;
+        }
+        a#test:hover{
+            text-decoration:underline;
+            color:blue;
+        }
+        a.www:link, a.www:visited {
+            text-decoration:underline;
+            color:blue;
+        }
+        a.www:hover {
+            text-decoration:none;
+        }
+        a.www#test:link, a.www#test:visited {
+            text-decoration:underline;
+            color: #5fff00;
+        }
+        a.www#test:hover {
+            text-decoration:none;
+        }
+        a.eee.www:link, a.eee.www:visited {
+            text-decoration:underline;
+            color: #ffd133;
+        }
+        a.eee.www:hover {
+            text-decoration:none;
+        }
+        p i {
+            background-color: #5fff00;
+        }
+        ul li {
+            background-color: #00ffff;
+        }
+        p a:link, a#test:link, p a:visited, a#test:visited {
+            font-size: 40px;
+        }
+        b+i {
+            text-decoration: line-through;
+        }
+        b#test+i{
+            text-decoration: dashed underline overline;
+        }
+        ul+p {
+            color: #5fff00;
+            text-decoration: line-through;
+        }
+        h1~p {
+            background-color: hotpink;
+        }
+        h4#test~p {
+            background-color: hotpink;
+            font-size: 30px;
+            text-decoration: line-through;
+        }
+        p i:not(p > i) {
+            font-size: 20px;
         }
     </style>
 </head>
@@ -18,5 +124,34 @@
         <p>Задание 1</p>
         <h2>Задание 2</h2>
     </div>
+    <p id="test">Задание 3</p>
+    <h2 id="test">Задание 4</h2>
+    <h3 class="bbb">Задание 5</h3>
+    <h2 class="bbb" id="test">Задание 6</h2>
+    <p class="bbb">Задание 7</p>
+    <h2 class="bbb">Задание 8</h2>
+    <p class="bbb" id="test">Задание 9</p>
+    <p>Задание 10</p>
+    <p class="xxx">Задание 11</p>
+    <h2 class="xxx">Задание 12</h2>
+    <p class="xxx" id="test">Задание 13</p>
+    <h3 class="fff">Задание 14</h3>
+    <p class="fff">Задание 15</p>
+    <p class="fff">Задание 16</p>
+    <p class="bbb fff">Задание 17</p>
+    <h2 class="bbb fff">Задание 18</h2>
+    <a href="https://www.surgu.ru" id="test">Задание 19</a>
+    <a href="https://www.surgu.ru" class="www">Задание 20</a>
+    <a href="https://www.surgu.ru" id="test" class="www">Задание 21</a>
+    <a href="https://www.surgu.ru" class="eee www">Задание 22</a>
+    <p><i>Задание 23</i></p>
+    <ul><li>Задание 24</li></ul>
+    <p><a href="">Задание 25</a></p>
+    <b></b><i>Задание 26</i>
+    <b id="test"></b><i>Задание 27</i>
+    <ul></ul><p>Задание 28</p>
+    <h1></h1><p>Задание 29</p>
+    <h4 id="test"></h4><p>Задание 30</p>
+    <p><b><i>Задание 31</i></b></p>
 </body>
 </html>
